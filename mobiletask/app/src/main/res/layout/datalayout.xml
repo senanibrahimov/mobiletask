@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/layoutunshapei">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="2dp"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 400 444"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:layout_marginTop="7dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/expences2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expences"
+            android:textColor="@color/narincitund"
+            android:textSize="18dp"
+            android:layout_marginTop="1dp"
+            android:onClick="secondactivity">
+
+        </TextView>
+        <View
+            android:layout_width="78dp"
+            android:layout_height="1dp"
+            android:background="@color/narincitund">
+
+        </View>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="23dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 234 567"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:layout_marginTop="7dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incomings"
+            android:textColor="@color/narincitund"
+            android:textSize="18dp"
+            android:layout_marginTop="1dp">
+
+        </TextView>
+        <View
+            android:layout_width="78dp"
+            android:layout_height="1dp"
+            android:background="@color/narincitund">
+
+        </View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 000 567"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:layout_marginTop="7dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cashback"
+            android:textColor="@color/narincitund"
+            android:textSize="18dp"
+            android:layout_marginTop="1dp">
+
+        </TextView>
+        <View
+            android:layout_width="78dp"
+            android:layout_height="1dp"
+            android:background="@color/narincitund">
+
+        </View>
+    </LinearLayout>
+</LinearLayout>
+
+<org.eazegraph.lib.charts.PieChart
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+   app:egInnerValueString="@android:string/copy"
+    app:egLegendTextSize="45dp"
+    android:layout_marginTop="20dp"
+    android:id="@+id/pichart">
+
+</org.eazegraph.lib.charts.PieChart>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reycelviewid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
